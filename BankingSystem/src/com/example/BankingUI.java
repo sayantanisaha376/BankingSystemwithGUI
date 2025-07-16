@@ -68,7 +68,7 @@ public class BankingUI extends JFrame {
 		try {
 			outputArea.setText(action.execute());
 		} catch (BankingException e) {
-			outputArea.setText("❌ " + e.getMessage());
+			outputArea.setText("..... " + e.getMessage());
 		}
 	}
 
