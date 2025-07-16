@@ -15,7 +15,7 @@ public class BankingController {
 				: new CurrentAccount(accNo, name, 5000);
 
 		accounts.put(accNo, new UserAccount(newAcc, name, password));
-		return "✅ Account created successfully!";
+		return " Account created successfully!";
 	}
 
 	public String deposit(String accNo, String name, String password, String amtStr) throws BankingException {
@@ -33,7 +33,7 @@ public class BankingController {
 		}
 
 		user.bankAccount.deposit(amt);
-		return "✅ Deposited INR " + amt;
+		return " Deposited INR " + amt;
 	}
 
 	public String withdraw(String accNo, String name, String password, String amtStr) throws BankingException {
@@ -51,7 +51,7 @@ public class BankingController {
 		}
 
 		user.bankAccount.withdraw(amt);
-		return "✅ Withdrawn INR " + amt;
+		return " Withdrawn INR " + amt;
 	}
 
 	public String showBalance(String accNo, String name, String password) throws BankingException {
